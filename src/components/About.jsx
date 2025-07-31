@@ -1,8 +1,14 @@
 import React from 'react';
+import { useEffect, useRef } from 'react';
 
-export default function About() {
+ function About() {
+   const experienceRef = useRef(null);
+
+  const scrollToExperience = () => {
+    experienceRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
-    <div  className="h-full pb-4 w-full bg-transparent">
+    <div id='about' className="h-full pb-4 w-full bg-transparent">
       {/* Navigation Bar */}
      
 
@@ -71,11 +77,11 @@ export default function About() {
 
               {/* Action Buttons */}
               <div className="flex flex-wrap gap-4 pt-4">
-                <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-xl font-medium hover:from-purple-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-purple-500/20">
+                <button onClick={scrollToExperience} className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-xl font-medium hover:from-purple-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-purple-500/20">
                   View My Work
                 </button>
                 <button className="px-8 py-4 border border-purple-500/30 text-purple-300 rounded-xl font-medium hover:bg-purple-500/10 hover:border-purple-400/50 transition-all duration-300">
-                  Download CV
+                  <a href='https://drive.google.com/drive/folders/1kaW4Zo6zFGDmF-QH75L3SgVEjeBibVKM?usp=drive_link' className='text-none' target='blank' >Download CV </a>
                 </button>
               </div>
 
@@ -172,3 +178,5 @@ export default function About() {
     </div>
   );
 }
+
+export default About;

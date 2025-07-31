@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Github, Code2, ExternalLink } from 'lucide-react';
 import LeetCodeCard from './LeetcodeCard';
 
-export default function DsaStatus() {
+function DsaStatus() {
   const [user, setUser] = useState(null);
   const username = 'Krishna41357';
   const particlesRef = useRef(null);
@@ -45,7 +45,7 @@ export default function DsaStatus() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden py-16 px-4 bg-transparent text-white">
+    <section id='profiles' className="relative overflow-hidden py-16 px-4 bg-transparent text-white">
       {/* Glowing Pulsing Circles */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/4 right-1/3 w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -158,3 +158,4 @@ export default function DsaStatus() {
     </section>
   );
 }
+export default DsaStatus;

@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { ExternalLink, Code, Layers, Brain } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-export default function Projects() {
+ function Projects() {
   const particlesRef = useRef(null);
 
   useEffect(() => {
@@ -82,7 +82,7 @@ export default function Projects() {
   };
 
   return (
-    <section className="relative overflow-hidden py-12 sm:py-16 lg:py-20 px-3 sm:px-4 lg:px-6 xl:px-8 bg-transparent">
+    <section id='projects' className="relative overflow-hidden py-12 sm:py-16 lg:py-20 px-3 sm:px-4 lg:px-6 xl:px-8 bg-transparent">
       <div className="absolute inset-0">
         <div className="absolute top-1/4 right-1/3 w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64 bg-purple-500/5 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 left-1/3 w-40 h-40 sm:w-56 sm:h-56 lg:w-72 lg:h-72 bg-purple-600/4 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '3s' }}></div>
@@ -196,3 +196,4 @@ export default function Projects() {
     </section>
   );
 }
+export default Projects;

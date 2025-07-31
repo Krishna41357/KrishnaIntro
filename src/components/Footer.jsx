@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function Footer() {
+function Footer() {
   return (
-    <footer className="relative w-full bg-black text-white overflow-hidden pt-16 pb-10 mt-32 border-t border-slate-800">
+    <footer id='contact' className="relative w-full bg-black text-white overflow-hidden pt-16 pb-10 mt-32 border-t border-slate-800">
       {/* Decorative Glows - Left & Right Sides */}
       <div className="absolute -left-20 top-1/2 w-64 h-64 bg-purple-700/20 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute -right-20 top-1/3 w-48 h-48 bg-fuchsia-500/20 rounded-full blur-2xl animate-ping"></div>
@@ -86,3 +86,4 @@ export default function Footer() {
     </footer>
   );
 }
+export default Footer;

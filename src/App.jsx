@@ -41,10 +41,11 @@ export default function App() {
   }, []);
   return (
     
-
+<>
+<Navbar />
     <div className='bg-gradient-to-br from-gray-950 via-slate-900 to-black overflow-x-hidden'>
      <div ref={particlesRef} className="absolute inset-0 z-0"></div>
-         <Navbar/>
+        
       <About />
       <TechStack />
       <Experience />
@@ -53,6 +54,7 @@ export default function App() {
       <Education />
       <Footer />
     </div>
+    </>
     
   );
 }

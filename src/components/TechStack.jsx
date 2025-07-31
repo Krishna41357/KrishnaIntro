@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
-export default function TechStack() {
+ function TechStack() {
   const [activeCategory, setActiveCategory] = useState('languages');
   const particlesRef = useRef(null);
 
@@ -87,7 +87,7 @@ export default function TechStack() {
   const filteredTechs = getFilteredTechs();
 
   return (
-    <section className="relative overflow-hidden py-12 sm:py-16 lg:py-20 px-3 sm:px-4 lg:px-6 xl:px-8 min-h-screen bg-transparent">
+    <section id='techstack' className="relative overflow-hidden py-12 sm:py-16 lg:py-20 px-3 sm:px-4 lg:px-6 xl:px-8 min-h-screen bg-transparent">
       {/* Background Elements - Optimized for mobile */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-48 h-48 sm:w-72 sm:h-72 lg:w-96 lg:h-96 bg-purple-500/8 rounded-full blur-3xl animate-pulse"></div>
@@ -375,3 +375,5 @@ export default function TechStack() {
     </section>
   );
 }
+
+export default TechStack;

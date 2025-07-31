@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
-export default function Experience() {
+ function Experience() {
   const particlesRef = useRef(null);
 
   useEffect(() => {
@@ -36,19 +36,11 @@ export default function Experience() {
 
   const experiences = [
     { 
-      company: 'NexG.ai', 
-      role: 'Full Stack Intern', 
-      duration: 'May 2025 – July 2025',
-      description: 'Developing cutting-edge AI-powered applications using modern web technologies',
-      technologies: ['React', 'Node.js', 'AI/ML', 'TypeScript'],
-      status: 'current'
-    },
-    { 
-      company: 'SavingsYogi', 
-      role: 'Full Stack Intern', 
+      company: 'NexG.ai || project - SavingsYogi', 
+      role: 'Full Stack , Cloud , devOps Intern', 
       duration: 'Jan 2025 – Mar 2025',
       description: 'Built scalable web applications focused on financial savings solutions',
-      technologies: ['JavaScript', 'Express.js', 'MongoDB', 'React'],
+      technologies: ['JavaScript', 'Express.js', 'MongoDB',"Redis", 'React', 'GenAi','AWS' , 'Docker'  ],
       status: 'completed'
     },
   ];
@@ -60,7 +52,7 @@ export default function Experience() {
   };
 
   return (
-    <section className="relative overflow-hidden py-12 sm:py-16 lg:py-20 px-3 sm:px-4 lg:px-6 xl:px-8 bg-transparent">
+    <section id='experience' className="relative overflow-hidden py-12 sm:py-16 lg:py-20 px-3 sm:px-4 lg:px-6 xl:px-8 bg-transparent">
       {/* Background + Grid */}
       <div className="absolute inset-0">
         <div className="absolute top-1/3 right-1/4 w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64 bg-purple-500/5 rounded-full blur-3xl animate-pulse"></div>
@@ -218,3 +210,4 @@ export default function Experience() {
     </section>
   );
 }
+export default Experience

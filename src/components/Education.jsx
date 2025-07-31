@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-export default function Education() {
+function Education() {
   const particlesRef = useRef(null);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export default function Education() {
   }, []);
 
   return (
-    <section className="relative overflow-hidden py-12 px-4 sm:px-6 lg:px-8 min-h-[70vh] bg-transparent">
+    <section id='education' className="relative overflow-hidden py-12 px-4 sm:px-6 lg:px-8 min-h-[70vh] bg-transparent">
       {/* Background floating particles */}
       <div ref={particlesRef} className="absolute inset-0 z-0"></div>
 
@@ -116,3 +116,4 @@ export default function Education() {
     </section>
   );
 }
+export default Education;
