@@ -1,4 +1,3 @@
-// components/Navbar.jsx
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -12,6 +11,14 @@ const navLinks = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  // Smooth scroll function
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 p-6 backdrop-blur-sm bg-black/20 shadow-md pb-2 max-w-[100vw]">
@@ -29,6 +36,10 @@ const Navbar = () => {
             <a
               key={link.id}
               href={`#${link.id}`}
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection(link.id);
+              }}
               className="text-gray-400 hover:text-white transition-colors duration-300 relative group"
             >
               <span className="text-purple-400">&lt;/</span>
@@ -84,7 +95,13 @@ const Navbar = () => {
               <a
                 key={link.id}
                 href={`#${link.id}`}
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsOpen(false);
+                  setTimeout(() => {
+                    scrollToSection(link.id);
+                  }, 100); // Let animation finish
+                }}
                 className="block text-white text-lg font-medium hover:text-purple-400 transition-colors"
               >
                 &lt;{link.label}&gt;
