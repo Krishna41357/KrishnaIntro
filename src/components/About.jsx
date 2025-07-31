@@ -8,7 +8,7 @@ import { useEffect, useRef } from 'react';
     experienceRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
   return (
-    <div id='about' className="h-full pb-4 w-full bg-transparent">
+    <div id='about' className="h-full pb-4 w-full overflow-x-hidden bg-transparent">
       {/* Navigation Bar */}
      
 

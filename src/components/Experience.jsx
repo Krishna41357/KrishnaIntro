@@ -52,7 +52,7 @@ import { motion } from 'framer-motion';
   };
 
   return (
-    <section id='experience' className="relative overflow-hidden py-12 sm:py-16 lg:py-20 px-3 sm:px-4 lg:px-6 xl:px-8 bg-transparent">
+    <section id='experience' className="relative overflow-x-hidden py-12 sm:py-16 lg:py-20 px-3 sm:px-4 lg:px-6 xl:px-8 bg-transparent">
       {/* Background + Grid */}
       <div className="absolute inset-0">
         <div className="absolute top-1/3 right-1/4 w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64 bg-purple-500/5 rounded-full blur-3xl animate-pulse"></div>
