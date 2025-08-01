@@ -65,8 +65,10 @@ function DsaStatus() {
       </div>
     <div ref={particlesRef} className="absolute inset-0 z-0"></div>
       <div className="relative z-10 max-w-6xl mx-auto">
+         <h2 className="text-purple-400 text-lg text-center font-mono mb-4">&lt;/Profiles&gt;</h2>
+         <div className="w-12 h-px bg-gradient-to-r from-purple-500 to-transparent mx-auto mb-4"></div>
         <h2 className="text-4xl font-bold text-center mb-12 text-purple-400">
-          🚀 DSA & GitHub Status
+          Coding Profiles
         </h2>
 
         <div className="grid md:grid-cols-2 gap-10">

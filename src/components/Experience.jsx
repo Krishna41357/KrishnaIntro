@@ -93,7 +93,7 @@ import { motion } from 'framer-motion';
         </div>
 
         {/* Timeline + Cards */}
-        <div className="relative">
+        <div className="relative ">
           <div className="absolute left-6 sm:left-8 top-0 bottom-0 w-px hidden sm:block"></div>
 
           <div className="space-y-6 sm:space-y-8 lg:space-y-12">

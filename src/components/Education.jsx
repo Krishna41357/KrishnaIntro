@@ -43,7 +43,7 @@ function Education() {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <div className="space-y-1 mb-4">
-          <h2 className="text-purple-400 text-sm font-mono">
+          <h2 className="text-purple-400 text-lg font-mono">
             <span className="text-purple-400">&lt;/</span>Education<span className="text-purple-400">&gt;</span>
           </h2>
           <div className="w-12 h-px bg-gradient-to-r from-purple-500 to-transparent mx-auto"></div>

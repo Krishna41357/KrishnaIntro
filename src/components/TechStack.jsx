@@ -150,7 +150,7 @@ import React, { useState, useEffect, useRef } from 'react';
         </div>
 
         {/* Tech Grid - Responsive grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-3 sm:gap-4 lg:gap-6 mb-12 sm:mb-16 lg:mb-20">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-3 sm:gap-4 lg:gap-6 mb-12 sm:mb-16 lg:mb-20 overflow-x-hidden">
           {filteredTechs.map((tech, index) => (
             <div
               key={`${activeCategory}-${tech.name}`}

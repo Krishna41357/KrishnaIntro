@@ -102,7 +102,7 @@ import { motion } from 'framer-motion';
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-purple-400 text-sm font-mono">&lt;/Projects&gt;</h2>
+          <h2 className="text-purple-400 text-lg font-mono">&lt;/Projects&gt;</h2>
           <div className="w-16 h-px bg-gradient-to-r from-purple-500 to-transparent mx-auto my-4"></div>
           <h1 className="text-3xl sm:text-4xl font-light text-white">
             Personal{' '}
