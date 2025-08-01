@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useRef } from 'react';
+import ModelCanvas from './ModelCanvas';
 
  function About() {
    const experienceRef = useRef(null);
@@ -121,14 +122,10 @@ import { useEffect, useRef } from 'react';
                     </div>
 
                     {/* 3D Model */}
-                    <iframe 
-                      title="Krishna's 3D Avatar" 
-                      frameBorder="0" 
-                      allowFullScreen 
-                      src="https://sketchfab.com/models/7w7pAfr5GdY/embed" 
-                      className="w-full h-full relative z-10"
-                      loading="lazy"
-                    ></iframe>
+                    <div className="sketchfab-embed-wrapper w-full h-full relative z-10">
+  <ModelCanvas/>
+</div>
+
                     
                     {/* Overlay Gradient */}
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 via-transparent to-slate-900/20 pointer-events-none rounded-3xl"></div>
