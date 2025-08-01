@@ -81,9 +81,15 @@ import ModelCanvas from './ModelCanvas';
                 <button onClick={scrollToExperience} className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-xl font-medium hover:from-purple-700 hover:to-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-purple-500/20">
                   View My Work
                 </button>
-                <button className="px-8 py-4 border border-purple-500/30 text-purple-300 rounded-xl font-medium hover:bg-purple-500/10 hover:border-purple-400/50 transition-all duration-300">
-                  <a href='https://drive.google.com/drive/folders/1kaW4Zo6zFGDmF-QH75L3SgVEjeBibVKM?usp=drive_link' className='text-none' target='blank' >Download CV </a>
-                </button>
+                 <a
+  href="https://drive.google.com/uc?export=download&id=1kaYrSTFUQRBAig_bYIblxlMUMbraiS2e"
+  rel="noopener noreferrer"
+>
+  <button className="px-8 py-4 border border-purple-500/30 text-purple-300 rounded-xl font-medium hover:bg-purple-500/10 hover:border-purple-400/50 transition-all duration-300">
+    Download CV
+  </button>
+</a>
+
               </div>
 
               {/* Professional Stats */}
