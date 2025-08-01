@@ -184,10 +184,11 @@ import { motion } from 'framer-motion';
                     ))}
                   </div>
                 </div>
-
+ <a href={project.link} target='blank'>
                 <button className="w-full py-3 rounded-xl bg-gradient-to-r from-purple-600/80 to-purple-700/80 text-white font-semibold hover:from-purple-500 hover:to-purple-600 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg hover:shadow-purple-500/30 border border-purple-500/30 hover:border-purple-400/50">
                   View Project
                 </button>
+                </a>
               </div>
             </motion.div>
           ))}
