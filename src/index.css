@@ -54,3 +54,21 @@ code {
 body {
   overflow-x: hidden;
 }
+
+/* index.css */
+
+/* Hide scrollbars for all elements (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbars for Firefox */
+* {
+  scrollbar-width: none;         /* Firefox */
+  -ms-overflow-style: none;      /* IE 10+ */
+}
+
+/* Optional: block horizontal scroll and preserve vertical scroll behavior */
+body {
+  overflow-x: hidden;            /* block horizontal scroll */
+}

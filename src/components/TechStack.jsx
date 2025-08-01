@@ -163,7 +163,7 @@ import React, { useState, useEffect, useRef } from 'react';
               <div className="absolute -inset-0.5 sm:-inset-1 bg-gradient-to-r from-purple-500/20 via-purple-600/15 to-purple-500/20 rounded-xl sm:rounded-3xl blur-sm sm:blur-lg opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
               
               {/* Card - Mobile optimized with fixed height */}
-              <div className="relative bg-gradient-to-br from-slate-800/60 to-slate-900/80 backdrop-blur-sm border border-slate-600/30 rounded-xl sm:rounded-2xl lg:rounded-3xl hover:border-purple-500/40 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 sm:hover:-translate-y-2 shadow-lg sm:shadow-xl shadow-black/20 h-24 sm:h-32 lg:h-40 overflow-x-hidden">
+              <div className="relative bg-gradient-to-br from-slate-800/60 to-slate-900/80 backdrop-blur-sm border border-slate-600/30 rounded-xl sm:rounded-2xl lg:rounded-3xl hover:border-purple-500/40 transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 sm:hover:-translate-y-2 shadow-lg sm:shadow-xl shadow-black/20 h-24 sm:h-32 lg:h-40 overflow-x-hidden scrollbar-hide">
                 
                 {/* Tech Logo - Centered and responsive */}
                 <div className="flex flex-col items-center justify-center h-full p-2 sm:p-4 lg:p-6">
