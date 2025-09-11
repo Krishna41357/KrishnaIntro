@@ -55,7 +55,7 @@ import ModelCanvas from './ModelCanvas';
                 </h1>
 
                 <p className="text-lg sm:text-xl lg:text-2xl text-gray-400 leading-relaxed max-w-2xl">
-                  <span className="text-white font-medium">MERN Stack Developer</span> passionate about building scalable web applications, 
+                  <span className="text-white font-medium">Software Developer</span> passionate about building scalable applications, 
                   <span className="text-white font-medium"> AI integration</span>, and crafting exceptional 
                   <span className="text-white font-medium"> user experiences</span>.
                 </p>
@@ -82,7 +82,7 @@ import ModelCanvas from './ModelCanvas';
                   View My Work
                 </button>
                  <a
-  href="https://drive.google.com/uc?export=download&id=1kaYrSTFUQRBAig_bYIblxlMUMbraiS2e"
+  href="https://drive.google.com/drive/folders/1kaW4Zo6zFGDmF-QH75L3SgVEjeBibVKM?usp=drive_link"
   rel="noopener noreferrer"
 >
   <button className="px-8 py-4 border border-purple-500/30 text-purple-300 rounded-xl font-medium hover:bg-purple-500/10 hover:border-purple-400/50 transition-all duration-300">
