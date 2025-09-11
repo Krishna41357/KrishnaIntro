@@ -82,7 +82,7 @@ import ModelCanvas from './ModelCanvas';
                   View My Work
                 </button>
                  <a
-  href="https://drive.google.com/drive/folders/1kaW4Zo6zFGDmF-QH75L3SgVEjeBibVKM?usp=drive_link"
+  href="https://drive.google.com/file/d/173kdEl7IQrSkYZoKV5GLJJ55q-br4z7H/view?usp=sharing"
   rel="noopener noreferrer"
 >
   <button className="px-8 py-4 border border-purple-500/30 text-purple-300 rounded-xl font-medium hover:bg-purple-500/10 hover:border-purple-400/50 transition-all duration-300">
